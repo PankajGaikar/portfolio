@@ -1,6 +1,10 @@
+import 'dart:js' as js;
+
 import 'package:flutter/material.dart';
+import 'package:portfolio/SocialButtonType.dart';
 import 'package:portfolio/contants.dart' as Constants;
 import 'package:portfolio/flutter_particle_bg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.only(top: 135),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(color: Colors.white),
-                  height: MediaQuery.of(context).size.height * .75,
+                  height: MediaQuery.of(context).size.height * .80,
                   width: MediaQuery.of(context).size.width * .4,
                   child: ListView(
                     children: [
@@ -90,7 +94,39 @@ class _MyHomePageState extends State<MyHomePage> {
                         '#swift #Objective-C #C #C++ #Flutter #Dart',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontWeight: FontWeight.w700),
-                      )
+                      ),
+                      Container(
+                        height: 20,
+                      ),
+                      SizedBox(
+                        height: 50,
+                        child: Center(
+                          child: ListView(
+                            shrinkWrap: true,
+                            padding: const EdgeInsets.all(5.0),
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                              SocialConnectButton(
+                                  button: SocialButtonType.mail),
+                              SocialConnectButton(
+                                  button: SocialButtonType.github),
+                              SocialConnectButton(
+                                  button: SocialButtonType.stackoverflow),
+                              SocialConnectButton(
+                                  button: SocialButtonType.linkedin),
+                              SocialConnectButton(
+                                  button: SocialButtonType.skype),
+                              SocialConnectButton(
+                                  button: SocialButtonType.twitter),
+                              SocialConnectButton(
+                                  button: SocialButtonType.instagram),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 20,
+                      ),
                     ],
                   ),
                 ),
@@ -99,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: ClipOval(
                   // radius: 100,
                   child: Image.asset(
-                    'assets/Sherlock.jpg',
+                    'assets/Profile.png',
                     height: 200,
                     width: 200,
                   ),
@@ -108,5 +144,37 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ));
+  }
+}
+
+class SocialConnectButton extends StatelessWidget {
+  const SocialConnectButton({
+    Key key,
+    @required this.button,
+  }) : super(key: key);
+
+  final SocialButtonType button;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: InkWell(
+        onTap: () {
+          switch (button) {
+            case SocialButtonType.mail:
+              launch(button.webURI);
+              break;
+            default:
+              js.context.callMethod('open', [button.webURI]);
+          }
+        },
+        child: Container(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(25.0),
+            child: Image.asset(button.asset, width: 50.0, height: 50.0),
+          ),
+        ),
+      ),
+    );
   }
 }
