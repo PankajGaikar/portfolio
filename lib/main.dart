@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                   height: MediaQuery.of(context).size.height * .75,
                   width: MediaQuery.of(context).size.width * .4,
-                  child: ListView(
+                  child: Column(
                     children: [
                       Text(
                         Constants.TITLE,
