@@ -50,30 +50,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                   height: MediaQuery.of(context).size.height * .75,
                   width: MediaQuery.of(context).size.width * .4,
-                  child: Column(
+                  child: Wrap(
+                    direction: Axis.horizontal,
                     children: [
-                      Text(
-                        Constants.TITLE,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 40, fontWeight: FontWeight.bold),
+                      Center(
+                        child: Text(
+                          Constants.TITLE,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 40, fontWeight: FontWeight.bold),
+                        ),
                       ),
                       Container(
                         height: 10,
                       ),
-                      Text(
-                        Constants.SUBTITLE,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w600),
+                      Center(
+                        child: Text(
+                          Constants.SUBTITLE,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w600),
+                        ),
                       ),
                       Container(
                         height: 5,
                       ),
-                      Text(
-                        Constants.SEMI_SUBTITLE,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontWeight: FontWeight.w100),
+                      Center(
+                        child: Text(
+                          Constants.SEMI_SUBTITLE,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontWeight: FontWeight.w100),
+                        ),
                       ),
                       Container(
                         height: 25,
@@ -90,10 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         height: 20,
                       ),
-                      Text(
-                        '#swift #Objective-C #C #C++ #Flutter #Dart',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontWeight: FontWeight.w700),
+                      Center(
+                        child: Text(
+                          '#swift #Objective-C #C #C++ #Flutter #Dart',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontWeight: FontWeight.w700),
+                        ),
                       ),
                       Container(
                         height: 10,
