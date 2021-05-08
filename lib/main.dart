@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.only(top: 135),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(color: Colors.white),
-                  height: MediaQuery.of(context).size.height * .80,
+                  height: MediaQuery.of(context).size.height * .75,
                   width: MediaQuery.of(context).size.width * .4,
                   child: ListView(
                     children: [
@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
                       Container(
-                        height: 20,
+                        height: 10,
                       ),
                       SizedBox(
                         height: 50,
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        height: 20,
+                        height: 10,
                       ),
                     ],
                   ),
