@@ -50,13 +50,55 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundcolor: Colors.black,
           pointcolor: Colors.white.withOpacity(0.2),
           // bgimg: AssetImage('assets/bg.png'),
-          child: Center(
-            child: Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(color: Colors.white),
-              height: MediaQuery.of(context).size.height * .95,
-              width: MediaQuery.of(context).size.width * .6,
-            ),
+          child: Stack(
+            alignment: Alignment.topCenter,
+            children: [
+              Center(
+                child: Container(
+                  padding: EdgeInsets.only(top: 135),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(color: Colors.white),
+                  height: MediaQuery.of(context).size.height * .75,
+                  width: MediaQuery.of(context).size.width * .6,
+                  child: ListView(
+                    children: [
+                      Text(
+                        'PANKAJ GAIKAR',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 40, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'iOS Developer',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                      Text(
+                        'iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer iOS Developer',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontWeight: FontWeight.w100),
+                      ),
+                      Text(
+                        '#swift #Objective-C #C #C++ #Flutter #Dart',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontWeight: FontWeight.w700),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                child: ClipOval(
+                  // radius: 100,
+                  child: Image.asset(
+                    'assets/Sherlock.jpg',
+                    height: 200,
+                    width: 200,
+                  ),
+                ),
+              )
+            ],
           ),
         ));
   }
