@@ -50,17 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundcolor: Colors.black,
           pointcolor: Colors.white.withOpacity(0.2),
           // bgimg: AssetImage('assets/bg.png'),
-          child: ListView(
-            children: [
-              Text('列表元素'),
-              ListTile(
-                title: Text(
-                  '第二个页面',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {},
-              )
-            ],
+          child: Center(
+            child: Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(color: Colors.white),
+              height: MediaQuery.of(context).size.height * .95,
+              width: MediaQuery.of(context).size.width * .6,
+            ),
           ),
         ));
   }
