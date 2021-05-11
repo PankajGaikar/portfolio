@@ -76,12 +76,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                     height: 10,
                                   ),
                                   Center(
-                                    child: Text(
-                                      Constants.SUBTITLE,
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w600),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          left: 20, right: 20),
+                                      child: Text(
+                                        Constants.SUBTITLE,
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      ),
                                     ),
                                   ),
                                   Container(
@@ -92,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       Constants.SEMI_SUBTITLE,
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          fontWeight: FontWeight.w100),
+                                          fontWeight: FontWeight.w300),
                                     ),
                                   ),
                                   Container(
@@ -100,10 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        left: 40, right: 40),
+                                        left: 20, right: 20),
                                     child: Text(
                                       Constants.INTRO_MESSAGE,
-                                      textAlign: TextAlign.left,
+                                      textAlign: TextAlign.justify,
                                       style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           height: 1.5),
@@ -113,11 +117,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                     height: 15,
                                   ),
                                   Center(
-                                    child: Text(
-                                      '#swift #Objective-C #C #C++ #Flutter #Dart',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w700),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          left: 20, right: 20),
+                                      child: Text(
+                                        '#swift #Objective-C #C #C++ #Flutter #Dart',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700),
+                                      ),
                                     ),
                                   ),
                                   Container(
