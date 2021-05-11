@@ -54,8 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: EdgeInsets.only(top: 120),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(color: Colors.white),
-                        height: MediaQuery.of(context).size.height * .78,
-                        // width: MediaQuery.of(context).size.width * .4,
                         child: Wrap(
                           direction: Axis.horizontal,
                           children: [
