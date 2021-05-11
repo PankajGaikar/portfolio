@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Center(
                 child: ResponsiveRow(
-                  columnsCount: 4,
+                  columnsCount: 12,
                   children: <Widget>[
                     FlexWidget(
                       child: Container(
@@ -144,10 +144,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           ],
                         ),
                       ),
-                      xs: 3,
-                      sm: 3,
-                      md: 3,
-                      lg: 3,
+                      xs: 11,
+                      sm: 10,
+                      md: 10,
+                      lg: 10,
+                      xl: 10,
+                      xxl: 10,
+                      xxxl: 10,
                     )
                   ],
                 ),
