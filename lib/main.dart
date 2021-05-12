@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(
                   children: [
                     Container(
-                      height: 100,
+                      height: 150,
                     ),
                     Center(
                       child: ResponsiveRow(
@@ -179,15 +179,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-                Container(
-                  child: ClipOval(
-                    // radius: 100,
-                    child: Image.asset(
-                      'assets/Profile.png',
-                      height: 200,
-                      width: 200,
+                Column(
+                  children: [
+                    Container(
+                      height: 50,
                     ),
-                  ),
+                    Container(
+                      child: ClipOval(
+                        // radius: 100,
+                        child: Image.asset(
+                          'assets/Profile.png',
+                          height: 200,
+                          width: 200,
+                        ),
+                      ),
+                    )
+                  ],
                 )
               ],
             ),
