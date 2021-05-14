@@ -1,6 +1,7 @@
 import 'dart:js' as js;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/SocialButtonType.dart';
 import 'package:portfolio/contants.dart' as Constants;
 import 'package:portfolio/flutter_particle_bg.dart';
@@ -16,12 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Pankaj Gaikar - iOS Developer - Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Pankaj Gaikar - iOS Developer - Portfolio'),
     );
   }
 }
@@ -67,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: Text(
                                       Constants.TITLE,
                                       textAlign: TextAlign.center,
-                                      style: TextStyle(
+                                      style: GoogleFonts.rubik(
                                           fontSize: 32,
                                           fontWeight: FontWeight.bold),
                                     ),
@@ -82,9 +83,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: Text(
                                         Constants.SUBTITLE,
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w600),
+                                        style: GoogleFonts.rubik(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -95,8 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: Text(
                                       Constants.SEMI_SUBTITLE,
                                       textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w300),
+                                      style: GoogleFonts.rubik(
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
                                   ),
                                   Container(
@@ -108,9 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: Text(
                                       Constants.INTRO_MESSAGE,
                                       textAlign: TextAlign.justify,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.5),
+                                      style: GoogleFonts.ubuntu(
+                                        textStyle: TextStyle(height: 1.5),
+                                      ),
                                     ),
                                   ),
                                   Container(
@@ -123,8 +126,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: Text(
                                         '#swift #Objective-C #C #C++ #Flutter #Dart',
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w700),
+                                        style: GoogleFonts.ubuntu(
+                                          fontWeight: FontWeight.w700,
+                                          fontStyle: FontStyle.italic,
+                                        ),
                                       ),
                                     ),
                                   ),
