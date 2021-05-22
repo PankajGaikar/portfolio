@@ -1,11 +1,11 @@
 {
-    "name": "portfolio",
-    "short_name": "portfolio",
+    "name": "Pankaj Gaikar - iOS Developer - Portfolio",
+    "short_name": "Pankaj Gaikar - iOS Developer - Portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Pankaj Gaikar is an iOS developer from Pune, India. He currently works for Tidal Music AS in Oslo, Norway.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
