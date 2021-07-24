@@ -28,6 +28,30 @@
 
   <title>Pankaj Gaikar - iOS Developer - Portfolio</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCitmkgmV_uLWXEBuIoGj0CmSCPSGR3jjg",
+      authDomain: "portfolio-21044.firebaseapp.com",
+      projectId: "portfolio-21044",
+      storageBucket: "portfolio-21044.appspot.com",
+      messagingSenderId: "626525297219",
+      appId: "1:626525297219:web:5969aa7752600a312d92f6",
+      measurementId: "G-76N3HJNPGN"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
